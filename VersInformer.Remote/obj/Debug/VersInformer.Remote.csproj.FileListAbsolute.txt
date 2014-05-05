@@ -1,0 +1,4 @@
+C:\Users\Emre Yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\bin\Debug\VersInformer.Remote.dll
+C:\Users\Emre Yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\bin\Debug\VersInformer.Remote.pdb
+C:\Users\Emre Yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\obj\Debug\VersInformer.Remote.dll
+C:\Users\Emre Yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\obj\Debug\VersInformer.Remote.pdb
