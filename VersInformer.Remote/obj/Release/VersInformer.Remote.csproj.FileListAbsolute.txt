@@ -1,4 +1,0 @@
-c:\users\emre yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\bin\Release\VersInformer.Remote.dll
-c:\users\emre yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\bin\Release\VersInformer.Remote.pdb
-c:\users\emre yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\obj\Release\VersInformer.Remote.dll
-c:\users\emre yurtseven\documents\visual studio 2013\Projects\VersInformer\VersInformer.Remote\obj\Release\VersInformer.Remote.pdb

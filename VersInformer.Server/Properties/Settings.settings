@@ -1,9 +1,0 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VersInformer.Server.Properties" GeneratedClassName="Settings">
-  <Profiles />
-  <Settings>
-    <Setting Name="NickName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">VersInformer Server</Value>
-    </Setting>
-  </Settings>
-</SettingsFile>
