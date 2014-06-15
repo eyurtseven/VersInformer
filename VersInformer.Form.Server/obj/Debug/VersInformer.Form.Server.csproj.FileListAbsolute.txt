@@ -1,0 +1,11 @@
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\bin\Debug\VersInformer.Form.Server.exe.config
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\bin\Debug\VersInformer.Form.Server.exe
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\bin\Debug\VersInformer.Form.Server.pdb
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\bin\Debug\VersInformer.WPF.Controls.dll
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\bin\Debug\VersInformer.WPF.Controls.pdb
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\obj\Debug\VersInformer.Form.Server.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\obj\Debug\VersInformer.Form.Server.MainForm.resources
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\obj\Debug\VersInformer.Form.Server.Properties.Resources.resources
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\obj\Debug\VersInformer.Form.Server.csproj.GenerateResource.Cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\obj\Debug\VersInformer.Form.Server.exe
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Form.Server\obj\Debug\VersInformer.Form.Server.pdb

@@ -1,0 +1,15 @@
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\bin\Debug\WPFHost.exe.config
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\bin\Debug\WPFHost.exe
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\bin\Debug\WPFHost.pdb
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\bin\Debug\ServiceAssembly.dll
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\Window1.baml
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\Window1.g.cs
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\App.g.cs
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost_MarkupCompile.cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost.g.resources
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost.Properties.Resources.resources
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost.csproj.GenerateResource.Cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost.exe
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\obj\Debug\WPFHost.pdb
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\WPFHost\bin\Debug\ServiceAssembly.pdb

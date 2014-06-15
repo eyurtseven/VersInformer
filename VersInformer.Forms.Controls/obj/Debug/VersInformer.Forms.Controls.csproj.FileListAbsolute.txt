@@ -1,0 +1,4 @@
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Forms.Controls\bin\Debug\VersInformer.Forms.Controls.dll
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Forms.Controls\bin\Debug\VersInformer.Forms.Controls.pdb
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Forms.Controls\obj\Debug\VersInformer.Forms.Controls.dll
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.Forms.Controls\obj\Debug\VersInformer.Forms.Controls.pdb

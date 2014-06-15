@@ -1,0 +1,10 @@
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\bin\Debug\VersInformer.WPF.Controls.dll
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\bin\Debug\VersInformer.WPF.Controls.pdb
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\ChatBox.baml
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\ChatBox.g.cs
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\VersInformer.WPF.Controls_MarkupCompile.cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\VersInformer.WPF.Controls.g.resources
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\VersInformer.WPF.Controls.Properties.Resources.resources
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\VersInformer.WPF.Controls.csproj.GenerateResource.Cache
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\VersInformer.WPF.Controls.dll
+C:\Users\Developer\Documents\Visual Studio 2013\Projects\WCF_CA\WCFWPFApp\VersInformer.WPF.Controls\obj\Debug\VersInformer.WPF.Controls.pdb

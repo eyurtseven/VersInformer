@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VersInformerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IVersInformer_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="72010000">
+          </wsrm:InactivityTimeout>
+          <wsrm:AcknowledgementInterval Milliseconds="200">
+          </wsrm:AcknowledgementInterval>
+        </wsrm:RMAssertion>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/VersInformer.Service.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVersInformer_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_Connect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_Disconnect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Disconnect" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_SendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_VersiyonAliniyor_InputMessage">
+    <wsdl:part name="parameters" element="tns:VersiyonAliniyor" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_VersiyonAlinacak_InputMessage">
+    <wsdl:part name="parameters" element="tns:VersiyonAlinacak" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_VersiyonTesteHazir_InputMessage">
+    <wsdl:part name="parameters" element="tns:VersiyonTesteHazir" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_VersiyonAlindi_InputMessage">
+    <wsdl:part name="parameters" element="tns:VersiyonAlindi" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_YemekListesi_InputMessage">
+    <wsdl:part name="parameters" element="tns:YemekListesi" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_RefreshClients_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RefreshClients" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_OnMessage_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnMessage" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_UserJoin_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UserJoin" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_UserLeave_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UserLeave" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_OnVersiyonAlinacak_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnVersiyonAlinacak" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_OnVersiyonAliniyor_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnVersiyonAliniyor" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_OnVersiyonTesteHazir_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnVersiyonTesteHazir" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_OnVersiyonAlindi_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnVersiyonAlindi" />
+  </wsdl:message>
+  <wsdl:message name="IVersInformer_OnAciktikArtik_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:OnAciktikArtik" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IVersInformer">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Connect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/Connect" message="tns:IVersInformer_Connect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/ConnectResponse" message="tns:IVersInformer_Connect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="true" name="Disconnect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/Disconnect" message="tns:IVersInformer_Disconnect_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/SendMessage" message="tns:IVersInformer_SendMessage_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="VersiyonAliniyor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/VersiyonAliniyor" message="tns:IVersInformer_VersiyonAliniyor_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="VersiyonAlinacak">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/VersiyonAlinacak" message="tns:IVersInformer_VersiyonAlinacak_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="VersiyonTesteHazir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/VersiyonTesteHazir" message="tns:IVersInformer_VersiyonTesteHazir_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="VersiyonAlindi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/VersiyonAlindi" message="tns:IVersInformer_VersiyonAlindi_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="YemekListesi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVersInformer/YemekListesi" message="tns:IVersInformer_YemekListesi_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RefreshClients">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/RefreshClients" message="tns:IVersInformer_RefreshClients_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OnMessage">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/OnMessage" message="tns:IVersInformer_OnMessage_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UserJoin">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/UserJoin" message="tns:IVersInformer_UserJoin_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UserLeave">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/UserLeave" message="tns:IVersInformer_UserLeave_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OnVersiyonAlinacak">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/OnVersiyonAlinacak" message="tns:IVersInformer_OnVersiyonAlinacak_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OnVersiyonAliniyor">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/OnVersiyonAliniyor" message="tns:IVersInformer_OnVersiyonAliniyor_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OnVersiyonTesteHazir">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/OnVersiyonTesteHazir" message="tns:IVersInformer_OnVersiyonTesteHazir_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OnVersiyonAlindi">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/OnVersiyonAlindi" message="tns:IVersInformer_OnVersiyonAlindi_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OnAciktikArtik">
+      <wsdl:output wsaw:Action="http://tempuri.org/IVersInformer/OnAciktikArtik" message="tns:IVersInformer_OnAciktikArtik_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IVersInformer" type="tns:IVersInformer">
+    <wsp:PolicyReference URI="#NetTcpBinding_IVersInformer_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Connect">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/Connect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disconnect">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/Disconnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="VersiyonAliniyor">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/VersiyonAliniyor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="VersiyonAlinacak">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/VersiyonAlinacak" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="VersiyonTesteHazir">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/VersiyonTesteHazir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="VersiyonAlindi">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/VersiyonAlindi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="YemekListesi">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/YemekListesi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshClients">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/RefreshClients" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnMessage">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/OnMessage" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserJoin">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/UserJoin" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLeave">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/UserLeave" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnVersiyonAlinacak">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/OnVersiyonAlinacak" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnVersiyonAliniyor">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/OnVersiyonAliniyor" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnVersiyonTesteHazir">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/OnVersiyonTesteHazir" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnVersiyonAlindi">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/OnVersiyonAlindi" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnAciktikArtik">
+      <soap12:operation soapAction="http://tempuri.org/IVersInformer/OnAciktikArtik" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VersInformerService">
+    <wsdl:port name="NetTcpBinding_IVersInformer" binding="tns:NetTcpBinding_IVersInformer">
+      <soap12:address location="net.tcp://localhost:7997/VersInformerServiceHost/tcp" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:7997/VersInformerServiceHost/tcp</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
