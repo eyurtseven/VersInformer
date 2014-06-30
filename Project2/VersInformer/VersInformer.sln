@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Common", "1 Common", "{2C55E23F-2D75-41E2-A7CA-89697C8C0CAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Server", "2 Server", "{21CC0769-8AA8-4AAE-8A0C-922A92820FB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Client", "3 Client", "{F131BE86-C378-4139-A61F-8805A2152C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersInformer.Common", "Common\VersInformer.Common\VersInformer.Common.csproj", "{3E61DCAD-2D00-4020-B5D9-BE41A54D309F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersInformer.WinClient", "Client\VersInformer.WinClient\VersInformer.WinClient.csproj", "{BEED23D1-BFE0-46F1-BF44-DDBAFA1DC608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersInformer.ConsoleHost", "Server\VersInformer.ConsoleHost\VersInformer.ConsoleHost.csproj", "{8E58BC8D-3683-4BD6-8D3F-CFADE3C89072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersInformer.Service", "Server\VersInformer.Service\VersInformer.Service.csproj", "{A2CD4E88-E818-4E49-900E-CAAD1B5134DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersInformer.ServiceClient", "Client\VersInformer.ServiceClient\VersInformer.ServiceClient.csproj", "{7000032B-35FE-47C7-AB6A-52093F5240BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E61DCAD-2D00-4020-B5D9-BE41A54D309F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E61DCAD-2D00-4020-B5D9-BE41A54D309F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E61DCAD-2D00-4020-B5D9-BE41A54D309F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E61DCAD-2D00-4020-B5D9-BE41A54D309F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEED23D1-BFE0-46F1-BF44-DDBAFA1DC608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEED23D1-BFE0-46F1-BF44-DDBAFA1DC608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEED23D1-BFE0-46F1-BF44-DDBAFA1DC608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEED23D1-BFE0-46F1-BF44-DDBAFA1DC608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E58BC8D-3683-4BD6-8D3F-CFADE3C89072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E58BC8D-3683-4BD6-8D3F-CFADE3C89072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E58BC8D-3683-4BD6-8D3F-CFADE3C89072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E58BC8D-3683-4BD6-8D3F-CFADE3C89072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CD4E88-E818-4E49-900E-CAAD1B5134DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CD4E88-E818-4E49-900E-CAAD1B5134DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CD4E88-E818-4E49-900E-CAAD1B5134DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CD4E88-E818-4E49-900E-CAAD1B5134DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7000032B-35FE-47C7-AB6A-52093F5240BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7000032B-35FE-47C7-AB6A-52093F5240BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7000032B-35FE-47C7-AB6A-52093F5240BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7000032B-35FE-47C7-AB6A-52093F5240BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E61DCAD-2D00-4020-B5D9-BE41A54D309F} = {2C55E23F-2D75-41E2-A7CA-89697C8C0CAE}
+		{BEED23D1-BFE0-46F1-BF44-DDBAFA1DC608} = {F131BE86-C378-4139-A61F-8805A2152C58}
+		{8E58BC8D-3683-4BD6-8D3F-CFADE3C89072} = {21CC0769-8AA8-4AAE-8A0C-922A92820FB2}
+		{A2CD4E88-E818-4E49-900E-CAAD1B5134DA} = {21CC0769-8AA8-4AAE-8A0C-922A92820FB2}
+		{7000032B-35FE-47C7-AB6A-52093F5240BC} = {F131BE86-C378-4139-A61F-8805A2152C58}
+	EndGlobalSection
+EndGlobal
